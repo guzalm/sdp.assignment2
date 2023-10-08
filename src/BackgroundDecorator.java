@@ -1,12 +1,13 @@
 class BackgroundDecorator extends PostDecorator {
-    private String background;
+    private String backgroundColor;
 
-    public BackgroundDecorator(Post decoratedPost, String background) {
+    public BackgroundDecorator(Post decoratedPost, String backgroundColor) {
         super(decoratedPost);
-        this.background = background;
+        this.backgroundColor = backgroundColor;
     }
 
     public String getContent() {
-        return decoratedPost.getContent() + "\nBackground: " + background;
+        return decoratedPost.getContent() + "\nBackground Color: " + backgroundColor;
     }
 }
+

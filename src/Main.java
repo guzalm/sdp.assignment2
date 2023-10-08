@@ -4,10 +4,10 @@ public class Main {
         Post post = new TextPost("Hello, Guzal!");
 
         Post postWithEmoji = new EmojiDecorator(post, "😃");
-        Post postWithBackground = new BackgroundDecorator(postWithEmoji, "Nature");
+        Post postWithBackgroundColor = new BackgroundDecorator(postWithEmoji, "Blue"); // Изменили на выбранный цвет
 
         System.out.println("Original Post: " + post.getContent());
         System.out.println("Post with Emoji: " + postWithEmoji.getContent());
-        System.out.println("Post with Background: " + postWithBackground.getContent());
+        System.out.println("Post with Background Color: " + postWithBackgroundColor.getContent());
     }
 }
